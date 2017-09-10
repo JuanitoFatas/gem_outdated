@@ -1,5 +1,7 @@
 # GemOutdated
 
+[![Build Status](https://travis-ci.org/JuanitoFatas/gem_outdated.svg?branch=master)](https://travis-ci.org/JuanitoFatas/gem_outdated)
+
 Find out if a given gem and version is outdated or not.
 
 ## Installation
@@ -33,7 +35,7 @@ GemOutdated.outdated?("rails", "5.1.4")
 GemOutdated.outdated?("rails", "5.1.5.rc1")
 => false
 
-# returns false when Version not exists
+# Returns false when Version not exists
 GemOutdated.outdated?("rails", "1.2.3.4")
 => false
 
