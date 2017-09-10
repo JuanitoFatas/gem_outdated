@@ -5,7 +5,6 @@ require "http"
 class GemOutdated
   class RubygemsAPI
     GemNotFound = Class.new(RuntimeError)
-    GemVersionNotFound = Class.new(RuntimeError)
 
     def initialize(gem_name)
       @gem_name = gem_name
