@@ -6,4 +6,4 @@
 
 2017.09.10
 
-- First version of GemOutdated.
+- First version of GemOutdated
