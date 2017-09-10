@@ -19,15 +19,14 @@ class GemOutdated
     end
 
     private
+    attr_reader :gem_name
 
-      API_ENDPOINT = "https://rubygems.org/api/v1"
+    API_ENDPOINT = "https://rubygems.org/api/v1"
 
-      attr_reader :gem_name
-
-      def gem_exists?
-        endpoint = File.join(API_ENDPOINT, "gems", "#{gem_name}.json")
-        code = HTTP.get(endpoint).code
-        code == 404 ? raise(GemNotFound) : true
-      end
+    def gem_exists?
+      endpoint = File.join(API_ENDPOINT, "gems", "#{gem_name}.json")
+      code = HTTP.get(endpoint).code
+      code == 404 ? raise(GemNotFound) : true
+    end
   end
 end
